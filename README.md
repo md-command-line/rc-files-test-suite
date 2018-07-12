@@ -26,3 +26,15 @@ tests will be stored as
 it may by default pass 7 arguments: foo/bar/bas/...
 Then the users would only need to write the expect messages with those arguments inserted correctly into the expectation.
 
+## Current Progress
+sourcing a bashrc does accept commands, 
+```bash
+. suite_pass.sh 
+
+--Following tests should pass
+success, suite was activated
+success, "bar" was second command
+
+--Following tests should fail
+fail, suite was not activated
+```
