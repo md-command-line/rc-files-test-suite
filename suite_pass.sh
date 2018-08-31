@@ -6,4 +6,4 @@
 
 
 echo ;echo '--Following tests move info.txt'
-. .bashrc info.txt -
+. .bashrc -test info.txt -

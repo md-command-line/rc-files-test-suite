@@ -57,9 +57,16 @@ fi
 ## frog="${test}"
 ## eval $frog
 # mv $(eval $frog)
+wf() { mv $1 $1$2;};
 
 #working 2
 test=$(declare -f wf | grep -v -E '{|}|\(')
 frog="echo ${test}"
 eval $frog
+## comment section
 
+pe() { printenv | grep $1  }
+
+message('wf info.txt -'z, 'mv info.txt info.txt-')
+
+message('pe foo bar bas boo', 'printenv | grep foo|bar|bas|boo')
